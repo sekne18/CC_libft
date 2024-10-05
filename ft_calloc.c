@@ -6,7 +6,7 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 07:08:47 by jan               #+#    #+#             */
-/*   Updated: 2024/10/02 07:25:25 by jan              ###   ########.fr       */
+/*   Updated: 2024/10/05 08:19:43 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	*ft_calloc(unsigned int nitems, unsigned int size)
 
 	i = -1;
 	if (size < 1)
-		return (NULL);
+		return (malloc(0));
 	arr = malloc(nitems * size);
 	if (!arr)
 		return (NULL);
