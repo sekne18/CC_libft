@@ -6,7 +6,7 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 14:22:46 by jan               #+#    #+#             */
-/*   Updated: 2024/10/06 22:53:44 by jans             ###   ########.fr       */
+/*   Updated: 2024/10/06 23:33:44 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "libft.h"
 
 char	**ft_split(char const *s, char c);
-char	*ft_strdup(char *str, int len);
+char	*ft_strndup(char *str, int len);
 int		count_word_len(const char *s, char c);
 
 /*
@@ -46,7 +46,7 @@ char	**ft_split(char const *s, char c)
 		while (*s && *s != c)
 			s++;
 		if (start < s)
-			arr[i++] = ft_strdup(start, (s - start));
+			arr[i++] = ft_strndup(start, (s - start));
 	}
 	arr[i] = 0;
 	return (arr);
@@ -71,7 +71,7 @@ int	count_word_len(const char *s, char c)
 	return (len);
 }
 
-char	*ft_strdup(char *str, int len)
+char	*ft_strndup(char *str, int len)
 {
 	char	*new;
 	int		i;

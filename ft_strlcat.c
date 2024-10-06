@@ -6,7 +6,7 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 23:12:06 by jan               #+#    #+#             */
-/*   Updated: 2024/10/06 22:47:07 by jans             ###   ########.fr       */
+/*   Updated: 2024/10/06 23:31:29 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ int	main()
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	dst_len;
-	int				src_len;
-	int				cpy_len;
+	int		src_len;
+	int		cpy_len;
 
 	dst_len = 0;
 	src_len = 0;

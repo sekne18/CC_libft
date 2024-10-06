@@ -6,11 +6,11 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 16:19:06 by jan               #+#    #+#             */
-/*   Updated: 2024/10/06 22:53:10 by jans             ###   ########.fr       */
+/*   Updated: 2024/10/06 23:34:01 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "linft.h"
+#include "libft.h"
 
 /*
 char *ft_strjoin(char const *s1, char const *s2);
