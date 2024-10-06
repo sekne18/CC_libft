@@ -6,14 +6,16 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 10:34:11 by jan               #+#    #+#             */
-/*   Updated: 2024/10/02 07:36:57 by jan              ###   ########.fr       */
+/*   Updated: 2024/10/06 22:48:47 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /*
 #include <stdio.h>
 
-void *ft_memchr(const void *s, int c, unsigned int n);
+void *ft_memchr(const void *s, int c, size_t n);
 
 int	main()
 {
@@ -24,7 +26,7 @@ int	main()
 	return (0);
 }
 */
-void	*ft_memchr(const void *s, int c, unsigned int n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	const unsigned char	*str;
 

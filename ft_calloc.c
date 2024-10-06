@@ -6,11 +6,12 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 07:08:47 by jan               #+#    #+#             */
-/*   Updated: 2024/10/05 08:19:43 by jans             ###   ########.fr       */
+/*   Updated: 2024/10/06 22:51:57 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
+
 /*
 #include <stdio.h>
 
@@ -23,7 +24,7 @@ int	main()
 	return (0);
 }
 */
-void	*ft_calloc(unsigned int nitems, unsigned int size)
+void	*ft_calloc(size_t nitems, size_t size)
 {
 	unsigned char	*arr;
 	int				i;

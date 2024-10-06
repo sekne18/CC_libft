@@ -6,14 +6,16 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 23:12:06 by jan               #+#    #+#             */
-/*   Updated: 2024/10/02 14:17:49 by jan              ###   ########.fr       */
+/*   Updated: 2024/10/06 22:47:07 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /*
 #include <stdio.h>
 
-unsigned int	ft_strlcat(char *dst, const char *src, size_t size );
+size_t	ft_strlcat(char *dst, const char *src, size_t size );
 
 int	main()
 {
@@ -25,9 +27,9 @@ int	main()
 	return (0);
 }
 */
-unsigned int	ft_strlcat(char *dst, const char *src, unsigned int size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	unsigned int	dst_len;
+	size_t	dst_len;
 	int				src_len;
 	int				cpy_len;
 

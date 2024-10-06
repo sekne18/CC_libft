@@ -6,14 +6,16 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 17:03:27 by jan               #+#    #+#             */
-/*   Updated: 2024/10/02 14:20:49 by jan              ###   ########.fr       */
+/*   Updated: 2024/10/06 22:50:03 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /*
 #include <stdio.h>
 
-int	ft_memcmp(const void *s1, const void *s2, unsigned int n);
+int	ft_memcmp(const void *s1, const void *s2, size_t n);
 
 int	main()
 {
@@ -24,7 +26,7 @@ int	main()
 	return (0);
 }
 */
-int	ft_memcmp(const void *s1, const void *s2, unsigned int n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*str1;
 	const unsigned char	*str2;

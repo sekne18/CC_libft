@@ -6,13 +6,15 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:40:25 by jan               #+#    #+#             */
-/*   Updated: 2024/10/02 14:19:43 by jan              ###   ########.fr       */
+/*   Updated: 2024/10/06 22:05:34 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 /*
 #include <stdio.h>
 
-void	ft_bzero(void *s, unsigned int n);
+void	ft_bzero(void *s, size_t n);
 
 int main()
 {
@@ -24,7 +26,7 @@ int main()
 }
 */
 
-void	ft_bzero(void *s, unsigned int n)
+void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*str;
 

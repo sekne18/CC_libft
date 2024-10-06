@@ -6,11 +6,13 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 11:23:57 by jan               #+#    #+#             */
-/*   Updated: 2024/10/02 07:39:53 by jan              ###   ########.fr       */
+/*   Updated: 2024/10/06 22:47:42 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(const char *s1, const char *s2, unsigned int n)
+#include "libft.h"
+
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	while ((*s1 || *s2) && n-- > 0)
 	{

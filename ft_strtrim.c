@@ -6,12 +6,12 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 19:06:22 by jan               #+#    #+#             */
-/*   Updated: 2024/10/01 10:03:48 by jan              ###   ########.fr       */
+/*   Updated: 2024/10/06 22:53:27 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 int		contains(char const *set, char c);
 char	*ft_strtrim(char const *s1, char const *set);

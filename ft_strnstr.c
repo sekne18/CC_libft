@@ -6,14 +6,16 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 23:28:28 by jan               #+#    #+#             */
-/*   Updated: 2024/10/02 07:08:20 by jan              ###   ########.fr       */
+/*   Updated: 2024/10/06 22:50:59 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /*
 #include <stdio.h>
 
-char	*ft_strnstr(const char *big, const char *little, unsigned int len);
+char	*ft_strnstr(const char *big, const char *little, size_t len);
 
 int	main(void)
 {
@@ -23,7 +25,7 @@ int	main(void)
 	return (0);
 }
 */
-char	*ft_strnstr(const char *big, const char *little, unsigned int len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	const char	*start;
 	const char	*l;

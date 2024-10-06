@@ -6,14 +6,16 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 11:29:42 by jan               #+#    #+#             */
-/*   Updated: 2024/10/01 12:20:17 by jan              ###   ########.fr       */
+/*   Updated: 2024/10/06 22:04:25 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /*
 #include <stdio.h>
 
-void	*ft_memset(void *s, int c, unsigned int n);
+void	*ft_memset(void *s, int c, size_t  n);
 
 int	main()
 {
@@ -23,7 +25,7 @@ int	main()
 	return (0);
 }
 */
-void	*ft_memset(void *s, int c, unsigned int n)
+void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*new;
 	unsigned char	ch;

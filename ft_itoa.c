@@ -6,11 +6,11 @@
 /*   By: jans <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 08:20:09 by jans              #+#    #+#             */
-/*   Updated: 2024/10/05 09:00:50 by jans             ###   ########.fr       */
+/*   Updated: 2024/10/06 22:54:02 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h" 
 //#include <stdio.h>
 
 char	*ft_itoa(int n);

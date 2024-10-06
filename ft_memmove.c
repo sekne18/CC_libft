@@ -6,9 +6,11 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 17:17:49 by jan               #+#    #+#             */
-/*   Updated: 2024/10/02 14:18:55 by jan              ###   ########.fr       */
+/*   Updated: 2024/10/06 22:37:40 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /*
 #include <stdio.h>
@@ -24,7 +26,7 @@ int	main()
 	return (0);
 }
 */
-void	*ft_memmove(void *dest, const void *src, unsigned int n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	const unsigned char	*s;
 	unsigned char		*d;

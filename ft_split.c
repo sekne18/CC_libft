@@ -6,12 +6,12 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 14:22:46 by jan               #+#    #+#             */
-/*   Updated: 2024/10/02 16:18:30 by jan              ###   ########.fr       */
+/*   Updated: 2024/10/06 22:53:44 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 char	**ft_split(char const *s, char c);
 char	*ft_strdup(char *str, int len);

@@ -6,14 +6,16 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 22:44:48 by jan               #+#    #+#             */
-/*   Updated: 2024/10/02 14:16:32 by jan              ###   ########.fr       */
+/*   Updated: 2024/10/06 22:46:03 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*`
+#include "libft.h"
+
+/*
 #include <stdio.h>
 
-unsigned int	strlcpy(char *dst, const char *src, unsigned int size);
+size_t	strlcpy(char *dst, const char *src, size_t size);
 
 int	main()
 {
@@ -24,10 +26,10 @@ int	main()
 	return (0);
 }
 */
-unsigned int	strlcpy(char *dst, const char *src, unsigned int size)
+size_t	strlcpy(char *dst, const char *src, size_t size)
 {
-	unsigned int	src_len;
-	unsigned int	cpy_len;
+	size_t	src_len;
+	size_t	cpy_len;
 
 	src_len = 0;
 	while (src[src_len])
