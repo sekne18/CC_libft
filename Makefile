@@ -1,3 +1,6 @@
+CC = cc
+CFLAGS = -Wall -Werror -Wextra
+
 SRCS = ft_atoi.c ft_isalpha.c ft_isalnum.c ft_isascii.c ft_isdigit.c \
 		ft_isprint.c ft_memchr.c ft_memset.c ft_strchr.c ft_strdup.c \
 		ft_strlen.c ft_strncmp.c ft_strrchr.c ft_strtrim.c ft_tolower.c \
@@ -21,7 +24,7 @@ bonus: $(BONUS_OBJS) $(OBJS)
 all: $(NAME)
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
 	rm -f $(NAME)
