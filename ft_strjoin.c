@@ -6,7 +6,7 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 16:19:06 by jan               #+#    #+#             */
-/*   Updated: 2024/10/06 23:34:01 by jans             ###   ########.fr       */
+/*   Updated: 2024/10/07 17:59:56 by jsekne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	arr = malloc((str_length(s1, s2) + 1) * sizeof(char));
+	if (!arr)
+		return (NULL);
 	while (*s1)
 		arr[i++] = *s1++;
 	while (*s2)
