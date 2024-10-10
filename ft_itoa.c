@@ -6,7 +6,7 @@
 /*   By: jans <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 08:20:09 by jans              #+#    #+#             */
-/*   Updated: 2024/10/06 22:54:02 by jans             ###   ########.fr       */
+/*   Updated: 2024/10/10 18:56:46 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,8 @@ char	*ft_itoa(int n)
 	arr = malloc((num_len(n) + 1) * sizeof(char));
 	if (!arr)
 		return (NULL);
+	if (n == 0)
+		arr[i++] = 0 + '0';
 	if (0 > n)
 		is_neg = -1;
 	while (n != 0)
@@ -68,7 +70,7 @@ int	num_len(int n)
 	int	len;
 
 	len = 0;
-	if (0 > n)
+	if (0 >= n)
 		len++;
 	while (n != 0)
 	{
