@@ -6,12 +6,13 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 23:12:06 by jan               #+#    #+#             */
-/*   Updated: 2024/10/10 17:52:20 by jsekne           ###   ########.fr       */
+/*   Updated: 2024/10/10 18:24:12 by jsekne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
 #include <stdio.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size );
@@ -27,7 +28,7 @@ int	main()
     printf("Length of the attempted string: %i\n", result);
 	return (0);
 }
-
+*/
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	dst_len;
