@@ -6,7 +6,7 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 19:06:22 by jan               #+#    #+#             */
-/*   Updated: 2024/10/10 20:54:56 by jans             ###   ########.fr       */
+/*   Updated: 2024/10/10 22:31:59 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		len;
 	int		i;
 
+	if (!s1)
+		return ((char *)s1);
 	len = 0;
 	while (contains(set, *s1))
 		s1++;

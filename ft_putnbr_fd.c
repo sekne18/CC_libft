@@ -6,7 +6,7 @@
 /*   By: jans <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 00:11:52 by jans              #+#    #+#             */
-/*   Updated: 2024/10/07 00:17:43 by jans             ###   ########.fr       */
+/*   Updated: 2024/10/10 23:18:11 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,23 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	*num;
+	char	arr[12];
+	int		i;
+	int		is_neg;
 
-	num = ft_itoa(n);
-	while (*num)
-		ft_putchar_fd(*num++, fd);
+	i = 0;
+	is_neg = 1;
+	if (n == 0)
+		arr[i++] = 0 + '0';
+	if (0 > n)
+		is_neg = -1;
+	while (n != 0)
+	{
+		arr[i++] = ((n % 10) * is_neg) + '0';
+		n /= 10;
+	}
+	if (is_neg == -1)
+		arr[i++] = '-';
+	while (--i >= 0)
+		ft_putchar_fd(arr[i], fd);
 }

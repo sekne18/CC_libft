@@ -6,24 +6,28 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 07:08:47 by jan               #+#    #+#             */
-/*   Updated: 2024/10/10 18:59:00 by jans             ###   ########.fr       */
+/*   Updated: 2024/10/11 00:09:31 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "limits.h"
 
-void	*ft_calloc(size_t nitems, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	void	*arr;
+	unsigned char	*arr;
+	size_t			i;
 
-	if (size == 0 || nitems == 0)
+	if (size == 0 || nmemb == 0)
 		arr = malloc(1);
-	else if (nitems > INT_MAX / size)
+	else if (nmemb > INT_MAX / size)
 		return (NULL);
 	else
-		arr = malloc(nitems * size);
+		arr = malloc(nmemb * size);
 	if (!arr)
 		return (NULL);
-	return (arr);
+	i = 0;
+	while (i < nmemb * size)
+		arr[i++] = 0;
+	return ((void *)arr);
 }
