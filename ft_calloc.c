@@ -6,36 +6,26 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 07:08:47 by jan               #+#    #+#             */
-/*   Updated: 2024/10/06 22:51:57 by jans             ###   ########.fr       */
+/*   Updated: 2024/10/10 16:43:57 by jsekne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "limits.h"
 
-/*
-#include <stdio.h>
-
-void	*ft_calloc(unsigned int nitems, unsigned int size);
-
-int	main()
-{
-	char *arr = ft_calloc(5, sizeof(char));
-	printf("%li\n", sizeof(arr));
-	return (0);
-}
-*/
 void	*ft_calloc(size_t nitems, size_t size)
 {
 	unsigned char	*arr;
 	int				i;
 
 	i = -1;
-	if (size < 1)
-		return (malloc(0));
-	arr = malloc(nitems * size);
+	if (size == 0 || nitems == 0)
+		arr = malloc(1);
+	else if (nitems > INT_MAX / size)
+		return (NULL);
+	else 
+		arr = malloc(nitems * size);
 	if (!arr)
 		return (NULL);
-	while (nitems--)
-		arr[++i] = 0;
 	return (arr);
 }

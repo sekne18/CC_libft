@@ -6,7 +6,7 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 11:29:42 by jan               #+#    #+#             */
-/*   Updated: 2024/10/06 22:04:25 by jans             ###   ########.fr       */
+/*   Updated: 2024/10/10 15:06:06 by jsekne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	*ft_memset(void *s, int c, size_t n)
 
 	new = s;
 	ch = c;
-	while (*new && n-- > 0)
+	while (n-- > 0)
 		*new++ = ch;
 	return ((void *)new);
 }

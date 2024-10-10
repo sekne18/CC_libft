@@ -6,11 +6,11 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 18:47:19 by jan               #+#    #+#             */
-/*   Updated: 2024/10/02 07:35:39 by jan              ###   ########.fr       */
+/*   Updated: 2024/10/10 15:43:00 by jsekne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
 	int	sum;
 	int	is_neg;

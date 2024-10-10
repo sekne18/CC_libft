@@ -6,7 +6,7 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 17:03:27 by jan               #+#    #+#             */
-/*   Updated: 2024/10/06 22:50:03 by jans             ###   ########.fr       */
+/*   Updated: 2024/10/10 15:08:18 by jsekne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	str1 = s1;
 	str2 = s2;
-	while ((*str1 || *str2) && n-- > 0)
+	while (n-- > 0)
 	{
 		if (*str1 != *str2)
 			return (*str1 - *str2);
