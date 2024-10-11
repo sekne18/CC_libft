@@ -6,7 +6,7 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 19:06:22 by jan               #+#    #+#             */
-/*   Updated: 2024/10/10 22:31:59 by jans             ###   ########.fr       */
+/*   Updated: 2024/10/11 15:30:12 by jsekne           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,30 +16,29 @@ int		contains(char const *set, char c);
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*new;
-	char	*orig;
-	int		len;
-	int		i;
+	char		*new;
+	size_t		l;
+	size_t		r;
+	int			i;
 
+	l = 0;
+	r = ft_strlen(s1);
 	if (!s1)
 		return ((char *)s1);
-	len = 0;
-	while (contains(set, *s1))
-		s1++;
-	while (s1[len])
-		len++;
-	len--;
-	while (contains(set, s1[len]))
-		len--;
-	new = malloc((++len + 1) * sizeof(char));
+	while (contains(set, s1[l]))
+		l++;
+	if (l == r)
+		return (ft_strdup(""));
+	while (r > l && contains(set, s1[r - 1]))
+		r--;
+	new = malloc((r - l + 1) * sizeof(char));
 	if (!new)
 		return (NULL);
-	orig = new;
 	i = 0;
-	while (i < len)
-		*new++ = s1[i++];
-	*new = '\0';
-	return (orig);
+	while (l < r)
+		new[i++] = s1[l++];
+	new[i] = '\0';
+	return (new);
 }
 
 int	contains(char const *set, char c)
