@@ -6,7 +6,7 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/29 11:03:57 by jan               #+#    #+#             */
-/*   Updated: 2024/10/10 15:27:12 by jsekne           ###   ########.fr       */
+/*   Updated: 2024/10/11 21:43:02 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@ char	*ft_strchr(const char *s, int c)
 {
 	int	i;
 
-	if (c > 127)
+	if ((unsigned char)c > 127)
 		return ((char *)s);
 	i = -1;
-	while (s[++i])
+	while ((unsigned char)s[++i])
 	{
-		if (s[i] == c)
+		if ((unsigned char)s[i] == (unsigned char)c)
 			return ((char *)&s[i]);
 	}
-	if (s[i] == c)
+	if ((unsigned char)s[i] == (unsigned char)c)
 		return ((char *)&s[i]);
 	return ((char *)0);
 }

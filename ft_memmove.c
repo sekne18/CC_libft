@@ -6,7 +6,7 @@
 /*   By: jan <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 17:17:49 by jan               #+#    #+#             */
-/*   Updated: 2024/10/06 22:37:40 by jans             ###   ########.fr       */
+/*   Updated: 2024/10/11 22:22:14 by jans             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	main()
 {
 	char	dest[19];
 	char	src[] = "This is campus 19!";
-	ft_memmove(dest, src, 19);
+	ft_memmove(((void *)0), ((void *)0), 5);
 	printf("%s\n", dest);
 	return (0);
 }
@@ -32,6 +32,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char		*d;
 	unsigned int		i;
 
+	if (!dest && !src)
+		return (NULL);
 	i = -1;
 	s = src;
 	d = dest;
